@@ -9,16 +9,16 @@ class HelloWorld < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://im-saas-build-public-artifacts.s3-eu-west-1.amazonaws.com/tools/hello-world/0.0.0/hello-world_macOS_64-bit.zip"
-    sha256 "ff373af2e16b7eeba19e329785933d4c395ef7d8b4c3d8a217657a8077b8026e"
+    url "https://github.com/hansbringert/hello-world_macOS_64-bit.zip/releases/download/v0.0.0/hello-world_macOS_64-bit.zip_macOS_64-bit.zip"
+    sha256 "00bc71a1a3270e18ec1b40bd46f2cb432ad11fe5018ff89a361fc459da37fb0c"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://im-saas-build-public-artifacts.s3-eu-west-1.amazonaws.com/tools/hello-world/0.0.0/hello-world_Tux_64-bit.zip"
-    sha256 "420d9157ae2e59c807b9c91d3b91f3ef46e6b611c60d569326ab64be54c99434"
+    url "https://github.com/hansbringert/hello-world_Tux_64-bit.zip/releases/download/v0.0.0/hello-world_Tux_64-bit.zip_macOS_64-bit.zip"
+    sha256 "808bf53dd307c2f5d7847e8387966376e7e74812eb749b5c745d5af1482e41f0"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://im-saas-build-public-artifacts.s3-eu-west-1.amazonaws.com/tools/hello-world/0.0.0/hello-world_Tux_arm64.zip"
-    sha256 "746023f8244bd913f9f540456e49e76ea1a7d077b969963b5bda052c9e167c76"
+    url "https://github.com/hansbringert/hello-world_Tux_arm64.zip/releases/download/v0.0.0/hello-world_Tux_arm64.zip_macOS_64-bit.zip"
+    sha256 "d27a61fedef819c0cd6d1ca6d1464e0d7ca47919b3f5ca6d289d6872fdffb7fd"
   end
 
   def install
