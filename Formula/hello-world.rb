@@ -10,15 +10,15 @@ class HelloWorld < Formula
 
   if OS.mac?
     url "https://github.com/hansbringert/hello-world/releases/download/v0.0.0/hello-world_macOS_64-bit.zip"
-    sha256 "260cf79440fdd0e788e68d1e8387eb983665d7a303eec4e19bad4e0cd0a1307a"
+    sha256 "d0637d26385181402532ded9fbfb464c26ade2a0faa6a11b45ed1b423648da3d"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/hansbringert/hello-world/releases/download/v0.0.0/hello-world_Tux_64-bit.zip"
-    sha256 "c2c028ca8b7101c471bb368e012a25dae0f8184982fc1f7972ddb9fd77659dfb"
+    sha256 "ed360560450434f9d8f1b69502b799433cfa4dcceac4dfc206894041e79bb78d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/hansbringert/hello-world/releases/download/v0.0.0/hello-world_Tux_arm64.zip"
-    sha256 "b2eb7e54032e97b20da78424931a9bea6b4d1df216d5102ee1c0c5e7b55b9352"
+    sha256 "1a3aee1077c8c4d63bdb3ea791d2c5ec9a02342d1bf19abb91d9b50feb2dbae5"
   end
 
   def install
