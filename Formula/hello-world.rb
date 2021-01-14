@@ -10,15 +10,15 @@ class HelloWorld < Formula
 
   if OS.mac?
     url "https://im-saas-build-public-artifacts.s3-eu-west-1.amazonaws.com/tools/hello-world/0.0.0/hello-world_macOS_64-bit.zip"
-    sha256 "6eb4e7ab52ad66caca8e2ea43082bf87c933b2e55a302e2545acdd6990df9f9f"
+    sha256 "ff373af2e16b7eeba19e329785933d4c395ef7d8b4c3d8a217657a8077b8026e"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://im-saas-build-public-artifacts.s3-eu-west-1.amazonaws.com/tools/hello-world/0.0.0/hello-world_Tux_64-bit.zip"
-    sha256 "cd9565e569cf1dc4628e111099811ed9c2a6f94ac3edf974669e431f5261d508"
+    sha256 "420d9157ae2e59c807b9c91d3b91f3ef46e6b611c60d569326ab64be54c99434"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://im-saas-build-public-artifacts.s3-eu-west-1.amazonaws.com/tools/hello-world/0.0.0/hello-world_Tux_arm64.zip"
-    sha256 "38076ac678772b5bc418a8ed6e164a44fa959b053902089c25b35f620ff75244"
+    sha256 "746023f8244bd913f9f540456e49e76ea1a7d077b969963b5bda052c9e167c76"
   end
 
   def install
