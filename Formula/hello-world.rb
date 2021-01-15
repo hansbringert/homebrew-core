@@ -5,20 +5,20 @@
 class HelloWorld < Formula
   desc "Hello World"
   homepage "https://hello"
-  version "0.0.0"
+  version "0.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/hansbringert/hello-world/releases/download/v0.0.0/hello-world_macOS_64-bit.zip"
-    sha256 "0e73ca65daafdf10536d38721ce37c19a494b0171fc87beda52b26da0f0d5d0e"
+    url "https://github.com/hansbringert/hello-world/releases/download/v0.0.1/hello-world_macOS_64-bit.zip"
+    sha256 "4e584a021131829f6afe1168964795449b43f9793a176d2c8ddcd2663cd3fc92"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/hansbringert/hello-world/releases/download/v0.0.0/hello-world_Tux_64-bit.zip"
-    sha256 "c34f5656bd09b0d4e55a64a3b4dece9a8ea1177e3945425ad823be17c818c11e"
+    url "https://github.com/hansbringert/hello-world/releases/download/v0.0.1/hello-world_Tux_64-bit.zip"
+    sha256 "c3a9c587050622ab85af812a391ee6184be357861a334db33c1347f2da1617d5"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/hansbringert/hello-world/releases/download/v0.0.0/hello-world_Tux_arm64.zip"
-    sha256 "663842e30c3cf5fe0fcaa1d0227d3f560587920ca9f41dac18b5e1c48adb70d4"
+    url "https://github.com/hansbringert/hello-world/releases/download/v0.0.1/hello-world_Tux_arm64.zip"
+    sha256 "14d343325021f5e13cccae50aaae953f96c94bb2e417c6553f67ba4024bc7f40"
   end
 
   def install
