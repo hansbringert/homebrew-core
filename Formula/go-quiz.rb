@@ -5,20 +5,20 @@
 class GoQuiz < Formula
   desc "Quiz web server"
   homepage "https://go-quiz"
-  version "0.0.0"
+  version "0.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/hansbringert/go-quiz/releases/download/v0.0.0/go-quiz_macOS_64-bit.zip"
-    sha256 "a9f947fc314a6331c1d4bcc86ee2a220d3f69744366a3a252f468d7d65659e38"
+    url "https://github.com/hansbringert/go-quiz/releases/download/v0.0.1/go-quiz_macOS_64-bit.zip"
+    sha256 "a013628be4725c458a12cb4b7e752e88d32eaee5797e708bd5c1e3221015baa3"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/hansbringert/go-quiz/releases/download/v0.0.0/go-quiz_Tux_64-bit.zip"
-    sha256 "bf49266696c6adf2b55ed99f520bb370d8c3e957db85c4f08f4789ec72e4ec75"
+    url "https://github.com/hansbringert/go-quiz/releases/download/v0.0.1/go-quiz_Tux_64-bit.zip"
+    sha256 "8e49ad6aeab566fcc6af5140b6363715d3b147689700d090d88c22ee024ea1e3"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/hansbringert/go-quiz/releases/download/v0.0.0/go-quiz_Tux_arm64.zip"
-    sha256 "353a836dc92eebf70f890fdae16b7408e579dc2d928baa6dad33f3fb4d5e148d"
+    url "https://github.com/hansbringert/go-quiz/releases/download/v0.0.1/go-quiz_Tux_arm64.zip"
+    sha256 "0d671ee9927128c414346812031132efc2b49a139d9a39bc2a6427792ee83c54"
   end
 
   def install
