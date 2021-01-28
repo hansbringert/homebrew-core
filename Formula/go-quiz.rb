@@ -10,15 +10,15 @@ class GoQuiz < Formula
 
   if OS.mac?
     url "https://github.com/hansbringert/go-quiz/releases/download/v0.0.0/go-quiz_macOS_64-bit.zip"
-    sha256 "514518217c7f3fecb038cc3dcf3a0e41ef17d67133ebda2cdbbaa7b9babeacd7"
+    sha256 "139ddc50bf92bccc4d226b3c1bdc3dee2a09f8196dc82944cd203ed35124d57b"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/hansbringert/go-quiz/releases/download/v0.0.0/go-quiz_Tux_64-bit.zip"
-    sha256 "48408a59e032253cf6a6d46c9a8ee17566c0e1867563edbe9e938e267f3ad338"
+    sha256 "55f3438f7b71f8d06ea6dd8b6c6edf5e19da12217857eb2b742b48314c112a4a"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/hansbringert/go-quiz/releases/download/v0.0.0/go-quiz_Tux_arm64.zip"
-    sha256 "2cf754d6283540cd0665ad8cac6edb4586dec5cdb80eba614ef259be02c1798a"
+    sha256 "16b4d0957e06febf580cbc4270625e90ff0d17b058e7ae1645d2682f4da82cef"
   end
 
   def install
